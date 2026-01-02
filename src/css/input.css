@@ -1,0 +1,135 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @font-face {
+font-family: nastaran;
+    src: url(../font/GoogleSansFlex_9pt-ExtraLight.ttf)
+}
+@layer base{
+     body{
+        font-family: nastaran;
+    }
+}
+/* animation button */
+.wave::before, a .wave::after {
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.wave::before {
+  border-radius: 45%;
+  background-color: #0581b3;
+  animation: wave 5s linear infinite;
+}
+
+.wave::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.5);
+  animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -75%) rotate(300deg);
+  }
+}
+
+/* animation index2 */
+@keyframes anime {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(110px);
+      }
+    }
+    .anime {
+      animation: anime 2s ease-in-out forwards;
+    }
+    /* ////////////////////////////////////////////////////////// */
+
+    @keyframes anime-md {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+    @media (min-width: 768px) {
+      .anime-md-active {
+        animation: anime-md 3s ease-in-out forwards;
+      }
+    }
+    @keyframes anime-lg {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200px);
+      }
+    }
+    @media (min-width: 1024px) {
+      .anime-lg-active {
+        animation: anime-lg 3s ease-in-out forwards;
+      }
+    }
+
+     @keyframes anime-icon {
+      0% {
+        transform: scale(0)
+      }
+      100% {
+        transform: scale(1.2)
+      }
+    }
+    .iconanime{
+      animation: anime-icon 3s ease-in-out forwards;
+    }
+     @keyframes ani {
+        0%{
+           transform: scale(0.4)
+        }
+        
+        100%{
+          transform: scale(1.1)
+        }
+      }
+      .animef{
+        animation: ani 2s ease-in-out forwards;
+      }
+
+
+      
+       @keyframes popin {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      } 
+.anime5{
+   animation: popin 0.3s ease-out;
+ }
+
+ 
+ 
+
+
+
+
+

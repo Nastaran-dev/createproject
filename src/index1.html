@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/output.css">
+  <style>
+    video{
+      border: none !important;
+      outline: none !important;
+    }
+    
+      .move{
+        opacity: 1;
+        transition: 1s;
+      }
+      .mo{
+        transition: 20s;
+       >span{
+        &:nth-of-type(2){
+          transform: translateY(-500px);
+        }
+        &:nth-of-type(1){
+          transform: rotate(45deg);
+          left: 0;
+        }
+        &:nth-of-type(3){
+          transform: rotate(-45deg);
+          left: 0;
+        }
+       }
+      }
+    
+  </style>
+</head>
+<body class="overflow-x-hidden">
+  <div class=" fixed flex flex-wrap h-[50px] w-[30px] justify-evenly content-center   text-white right-5 top-3 text-[30px] rotate-[90deg]  *:duration-700 transition-all cursor-pointer z-[999]  *:absolute  *:flex *:text-black    " id="icon">
+      <span class="left-[5px]">|</span>
+      <span class="left-[13px]">|</span>
+      <span class="left-[22px]">|</span>
+    </div>
+    <div class="w-[200px] h-[200px]  absolute top-10 right-0   opacity-0  z-[999]" id="ham">
+      <figure class="relative overflow-hidden transition-all duration-1000 rounded-3xl"><img src="img/photo_2025-12-30_20-23-11.jpg" alt="" class="w-full duration-1000"></figure>
+       <div class="flex -translate-y-10 gap-4 w-full justify-center *:md:w-[30px] *:w-[25px]   *:duration-700">
+     <a href="https://github.com/nastaran-dev" target="_blank" class="hover:-translate-y-4 abc"><img src="img/github-fill.svg" alt=""></a>
+     <a href="https://www.linkedin.com/in/nastaran-mohammadi-1515a8382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="hover:-translate-y-4 abc"><img src="img/linkedin-box-fill.svg" alt=""></a>
+     <a href="https://instagram.com/nastaran__dev" target="_blank" class="hover:-translate-y-4 abc"><img src="img/instagram-fill.svg" alt=""></a>
+    </div>
+    </div>
+  <div class="flex flex-col justify-center w-full min-h-screen  bg-[#eff2ef] ">
+     
+        <video src="img/VID_20251229_163353_954 (online-video-cutter.com).mp4" autoplay loop muted  class="w-[300px]  mx-auto    block  sm:w-[200px]  "></video>
+     
+    <div class="flex flex-col gap-3 justify-center  px-4 w-full *:rounded-3xl  xl:px-96 sm:px-32 *:flex *:justify-center *:items-center *:p-3 *:capitalize *:text-md  *:lg:text-2xl">
+    <a href="index2.html" class="bg-yellow-400 " style="
+      background: #fdc830; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #f37335,
+        #fdc830
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #f37335,
+        #fdc830
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">creat account</a>
+    <a href="index3.html" class="text-white bg-blue-950">log in</a>
+  </div>
+  </div>
+
+</body>
+<script>
+      const icon = document.getElementById('icon')
+      const ham = document.getElementById('ham')
+      icon.addEventListener('click' , (e)=>{
+       icon.classList.toggle('mo')
+       ham.classList.toggle('move')
+    })
+    </script>
+</html>
